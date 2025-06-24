@@ -8,3 +8,43 @@
 - Staging Area - letting Git know to what files to track; any changes done to the files, we need to add that to staging area and then only we can commit. files which are un-staged can be committed directly but not recommended.
 - Commit History - Tracking the changes in file for all commits, every commit will have an ID which helps for rollback and to track the changes applied to the file.
 - Git can be cloned and pushed either by HTTPS (Login Creds) or SSH (Public/Private KeyPair)
+
+# Git Commands 
+- **git init** → creates a local repository in your local machine for the project
+- **git init -b main** → creates a local repository in your local machine for the project with branch main
+- **git status** → to check the status of git repository
+- **rm -rf .git** → to delete the folder of git from the project folder
+- **git add FirstCode.txt** → to add the file to the staging area of git
+- **git add .** → to add all the files to the staging area of git
+- **git rm --cached FirstCode.txt** → to remove the file from git
+- **git restore --staged confidential.txt** → to restore the deleted file to un-staged
+- **git log** → to check the history of commits done and it provides commit Id, Author , date and commit message
+- **git log --pretty=oneline** —> to check for the commit history in single line, provides commit id and message
+- **git commit -m “FirstCommit”** → to commit the changes in local repository, message is mandatory
+- **git commit -a -m "Skipping Staging”** → to commit directly from Modified file without staging
+    - -a —> refers to add all the modified files to staging area
+    - -m —> refers to the message of commit and text inside “” is the commit message
+- **git diff** → to check the changes of the previous staged version and the file changed in working directory
+- **git diff --staged** → to check the changes happened to a file which is added to staging area.
+- **git clone XXXX.git** → to take a copy of code base from remote to local repository.
+- **git branch -M main** → to mark the branch and MAIN
+- **git remote add origin XXXXX.git** → to add the remote repository to the local repository
+- **git push -u origin main →** to push the code from local repository to remote repository for the first time.
+- **git push origin main** → to push the code from local repository to remote repository.
+    - origin → Remote Repository URL
+    - main → Branch Name to be pushed
+- **git remote -v** → used to check the remote repositories (For Fetch and to Push)
+- **git tag -a v1.0 -m "Version 1”** → to add a tag to the source code
+    - v1.0 is the Tag name
+    - Version 1 is the Tag Message
+- **git push origin v1.0** → to push the tags to remote repository
+- **git checkout -b feature1 or git switch -c feature1** → creates a new branch named feature1 and switches to this branch as working directory
+- **git checkout main** or **git switch main** → switches the checkout branch to main
+- **git branch** → list all the branches from local repository and * is prefixed for check-out branch
+- **git branch --all** → list all the branches from local and remote repository and * is prefixed for check-out branch in local
+- **git switch -** → switches the working directory to the previous branch
+- **git branch -d feature2** → deletes the feature2 branch from local repository
+- **git merge main feature1** → merges the branches
+    - main - Destination Branch, this should be the working directory
+    - feature1 - which has the lates code which needs to be applied to main
+- **git pull** → used to pull the latest code from remote to local repository for the branch in working directory
