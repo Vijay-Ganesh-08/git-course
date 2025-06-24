@@ -10,7 +10,8 @@
 - Git can be cloned and pushed either by HTTPS (Login Creds) or SSH (Public/Private KeyPair)
 
 # Git Commands 
-- **git init** → creates a local repository in your local machine for the project
+
+- (**git init**) → creates a local repository in your local machine for the project
 - **git init -b main** → creates a local repository in your local machine for the project with branch main
 - **git status** → to check the status of git repository
 - **rm -rf .git** → to delete the folder of git from the project folder
