@@ -2,3 +2,6 @@ Hello World !!!
 Welcome to Git Course..
 Skipping Staging and committing directly.. 
 checking for the changes..
+
+
+checking to file removal
